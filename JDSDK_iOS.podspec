@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "JDSDK_iOS"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "A short description of JDSDK_iOS."
 
   # This description is used to generate tags and improve search results.
@@ -51,8 +51,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.resources = "JDSDK.bundle"
+  spec.platform = :ios, '10.0'
 
   spec.requires_arc = true
-  spec.vendored_frameworks = 'JDSDK.framework'
+  spec.ios.vendored_frameworks = 'JDSDK.framework'
 
 end
